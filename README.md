@@ -1,5 +1,4 @@
 <h1>𝙏𝙊𝙑𝙄𝙉𝙊 𝘽𝙊𝙏
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Manafsoul007/TovinoBotV3)
 
 ## Features
 
