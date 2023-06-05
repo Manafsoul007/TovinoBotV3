@@ -5,15 +5,15 @@ RUN apt install git -y
 COPY requirements.txt /requirements.txt
 
 
-
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN cd /
 
-RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 
 RUN mkdir /TovinoBotV3
-
 WORKDIR /TovinoBotV3
-
 COPY start.sh /start.sh
-
 CMD ["/bin/bash", "/start.sh"]
+
+
+
+
