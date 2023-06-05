@@ -12,9 +12,6 @@ Pymoe
 pendulum
 pyshorteners
 pytesseract
-string-extract
-domain-extract
-hashtags_extract
 requests
 wget
 gtts
@@ -27,5 +24,8 @@ countryinfo
 datetime
 pytz
 aiohttp
+
+
+
 
 
