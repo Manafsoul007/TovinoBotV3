@@ -81,14 +81,9 @@ async def start(client, message: pyrogram.types.Message):
 
         await message.reply_photo(
             photo=START_IMAGE_URL if START_IMAGE_URL else random.choice(PICS),
-            caption=script.START_TXT.format(
-                (message.from_user.mention if 
-                message.from_user else 
-                message.chat.title), 
-                temp.U_NAME, 
-                temp.B_NAME,
-            ),
-            reply_markup=reply_markup
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
         )
         return
 
@@ -132,7 +127,7 @@ async def start(client, message: pyrogram.types.Message):
             photo=START_IMAGE_URL if START_IMAGE_URL else random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
         return
     data = message.command[1]
